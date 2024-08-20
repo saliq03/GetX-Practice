@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:getx_practice/FirstScreen.dart';
 import 'package:getx_practice/Home.dart';
 import 'package:get/get.dart';
+import 'package:getx_practice/SecondScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +21,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Home()
+      home: Home(),
+      getPages: [
+        GetPage(name:'/screeen', page: ()=>Home()),
+        GetPage(name:'/screeenfirst', page: ()=>Firstscreen()),
+        GetPage(name:'/screeenSecond', page: ()=>Secondscreen()),
+      ],
     );
   }
 }

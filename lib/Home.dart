@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_practice/FirstScreen.dart';
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -31,7 +32,10 @@ class _HomeState extends State<Home> {
             }, child: Text("Press")),
             ElevatedButton(onPressed: (){
               ChangeTheme();
-            }, child: Text("Change theme"))
+            }, child: Text("Change theme")),
+            ElevatedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>Firstscreen()));
+            }, child: Text("Go to first screen"))
           ],
         ),
       ),
