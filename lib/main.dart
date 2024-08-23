@@ -3,6 +3,7 @@ import 'package:getx_practice/FirstScreen.dart';
 import 'package:getx_practice/Home.dart';
 import 'package:get/get.dart';
 import 'package:getx_practice/SecondScreen.dart';
+import 'package:getx_practice/languages.dart';
 import 'package:getx_practice/size_and_languages.dart';
 
 void main() {
@@ -18,6 +19,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'GetX Practice App',
       debugShowCheckedModeBanner: false,
+      translations: Languages(),
+      fallbackLocale: Locale('en','US'),
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,

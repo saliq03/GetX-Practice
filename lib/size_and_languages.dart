@@ -18,9 +18,14 @@ class _SizeAndLanguagesState extends State<SizeAndLanguages> {
       title: Text("Size and languages"),
     ),
       body: Container(
-        color: Colors.red,
+        color: Colors.pinkAccent,
         height: Get.height*.3,
         width: Get.width*1,
+        child: Column(
+          children: [
+            Text('message'.tr,style: TextStyle(fontWeight: FontWeight.bold),)
+          ],
+        ),
       ),
     );
   }
