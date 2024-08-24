@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:getx_practice/SecondScreen.dart';
 import 'package:getx_practice/languages.dart';
 import 'package:getx_practice/size_and_languages.dart';
+import 'package:getx_practice/statemangement.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SizeAndLanguages(),
+      home: StateManagement(),
       getPages: [
         GetPage(name:'/screeen', page: ()=>Home()),
         GetPage(name:'/screeenfirst', page: ()=>Firstscreen()),

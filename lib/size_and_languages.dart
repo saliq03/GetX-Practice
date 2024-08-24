@@ -23,7 +23,7 @@ class _SizeAndLanguagesState extends State<SizeAndLanguages> {
         width: Get.width*1,
         child: Column(
           children: [
-            Text('message'.tr,style: TextStyle(fontWeight: FontWeight.bold),)
+            Text('name'.tr,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),)
           ],
         ),
       ),

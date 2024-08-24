@@ -8,7 +8,7 @@ class Languages extends Translations{
     'name': 'saliq',
     'message': "we are just practiceing"
   },
-    'ur_PAK': {
+    'ur_PK': {
       'name': 'سالک',
       'message': "ہم صرف مشق کر رہے ہیں"
     }
