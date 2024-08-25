@@ -4,6 +4,6 @@ class countercontroller extends GetxController{
   RxInt counter=0.obs;
 
   IncrementCounter(){
-    counter++;
+    counter.value++;
   }
 }
