@@ -17,9 +17,15 @@ class _SelectImageState extends State<SelectImage> {
     return Scaffold(
       body: Center(
         child: Obx((){
-          return CircleAvatar(
-            backgroundImage: imageController.imagePath.isNotEmpty? FileImage(File(imageController.imagePath.value)):
-            null,
+          return GestureDetector(
+            onTap: (){
+              imageController.PickImage();
+            },
+            child: CircleAvatar(
+              radius: 50,
+              backgroundImage: imageController.imagePath.isNotEmpty? FileImage(File(imageController.imagePath.value)):
+              null,
+            ),
           );
         })
       ),
